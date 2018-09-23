@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Frames - w3earth</title>
+<script src="script/modernizr/modernizr.custom.fr.js"></script>
+<link rel="stylesheet" href="themes/base/jquery.ui.all.css">
+<link rel="stylesheet" href="style/demos.css">
+<link rel="stylesheet" href="style/layout.css">
+<link rel="stylesheet" href="style/colpick.css">
+<link rel="stylesheet" href="style/frame.css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+    <script src="script/selectivizr/selectivizr.js"></script>
+    <noscript><link rel="stylesheet" href="css/ie-fallback.css" media="screen, projection"></noscript>
+	<![endif]-->
+	<script src="script/jquery.ui.core.js"></script>
+	<script src="script/jquery.ui.widget.js"></script>
+    <script src="script/jquery.ui.position.js"></script>
+	<script src="script/jquery.ui.menu.js"></script>
+	<script src="script/jquery.ui.button.js"></script>
+    <script src="script/jquery.ui.autocomplete.js"></script>
+    <script src="script/jquery.ui.datepicker.js"></script>
+    <script src="script/jquery.ui.colpick.js"></script>
+    <script src="script/jquery.ddslick.js"></script>
+    <script src="script/frame.js"></script>
+    <script>
+    	$(document).ready(function() {
+			$('section h3').click(function() {
+				$(this).nextAll().toggle();
+			});
+		});
+    </script>
+    
+</head>
+
+<body>
+<div id="container">
+<header><img src="style/images/myFrames-logo.png" alt="logo" longdesc="demo.html"></header>
+<article>
+<dfn>Html readymade controlls</dfn>
+<p>click on different bar to see detailed components.</p>
+</article>
+<section class="pageA">
+<h3>Buttons</h3>
+<pre>You can use any html element for button i.e. &lt;a&gt;, &lt;span&gt;, &lt;div&gt;, &lt;p&gt;, &lt;button&gt; or &lt;input&gt;, just only you have to push, 'f-btn' class name.</pre>
+<div class="bottombar">
+<button class="f-btn f-fontSize13">My name is John</button>
+<input type="submit" class="f-btn f-fontSize13" value="My name is John">
+<a href="#" class="f-btn f-fontSize13">My name is John</a>
+<span class="f-btn f-fontSize13"> My name is John</span>
+<div class="f-btn f-fontSize13"> My name is John</div>
+<p class="f-btn f-fontSize13"> My name is John</p>
+</div>
+<pre>For different action button use multiple class names i.e. f-info, f-success, f-fav, f-warning, f-danger</pre>
+<div class="bottombar">
+<button class="f-btn f-fontSize13 f-info">f-info</button>
+<input type="submit" class="f-btn f-fontSize13 f-success" value="f-success">
+<a href="#" class="f-btn f-fontSize13 f-fav">f-fav</a>
+<span class="f-btn f-fontSize13 f-warning">f-warning</span>
+<div class="f-btn f-fontSize13 f-danger">f-danger</div>
+<p class="f-btn f-fontSize13 f-disabled">f-disabled</p>
+</div>
+<pre>You can create your custom botton easily just adding extra class like "f-custombtn1"</pre>
+<div class="bottombar">
+<div class="f-btn f-fontSize13 f-custombtn1">Custom Button</div>
+</div>
+<pre>For large button use large font class names i.e. f-fontSize16, f-fontSize20</pre>
+<div class="bottombar">
+<button class="f-btn f-fontSize16 f-fav">Big Button</button>
+<button class="f-btn f-fontSize25 f-fav">More Big Button</button>
+</div>
+</section>
+<section class="pageB">
+<h3>Autocomplete Text box</h3>
+<div class="bottombar">
+<div class="ui-widget">
+	<form>
+	<label for="developer">Developer: </label>
+	<input id="developer" class="f-fontSize13 autocompletebox">
+	</form>
+</div>
+</div>
+</section>
+<section class="pageC">
+<h3>Date Calender</h3>
+<pre>Datepicker use datepicker class </pre>
+<div class="bar">
+Date: <input type="text" id="datepicker" class="datepicker">
+</div>
+<pre>Select date range from datepicker </pre>
+<div class="bar">
+<label for="from">From</label>
+<input type="text" id="datepickfrom" name="from" class="datepicker" />
+<label for="to">to</label>
+<input type="text" id="datepickto" name="to" class="datepicker" />
+</div>
+</section>
+
+<section class="pageD">
+<h3>Color Picker</h3>
+<pre>Color picker use datepicker class </pre>
+<div class="bar">
+	<div class="color-box"></div>
+    <div type="text" id="picker" class="colorpicker" /></div>
+</div>
+</section>
+
+<section class="pageE">
+<h3>Form Elements</h3>
+<pre>All elements used as in as html5 Text, Password, Email, URL, Number and Range. 
+&lt;input type="text" class="f-txt f-fontSize13" placeholder="Enter Text" required /&gt;
+&lt;input type="password" class="f-password f-fontSize13" placeholder="Enter Password" required /&gt;
+&lt;input type="email" class="f-email f-fontSize13" placeholder="Enter Email" required /&gt;
+&lt;input type="url" class="f-url f-fontSize13" placeholder="Enter website" required /&gt;
+&lt;input type="number" class="f-number f-fontSize13" placeholder="Enter Number" required /&gt;
+&lt;input type="color" class="f-color f-fontSize13" placeholder="Enter Color" required /&gt;
+&lt;input type="range" id="a" value="50" class="f-range f-fontSize13" /&gt;
+NB: Pattern used in Text input not for Safari browser.</pre>
+<div class="bar">
+	<input type="text" class="f-txt f-fontSize13" placeholder="Enter Text 6 Alphabets" required pattern="[A-Za-z]{6}" />
+    <input type="password" class="f-password f-fontSize13" placeholder="Enter Password" required />
+    <input type="email" class="f-email f-fontSize13" placeholder="Enter Email" required />
+    <input type="url" class="f-url f-fontSize13" placeholder="Enter website" required />
+    <input type="number" class="f-number f-fontSize13" placeholder="Enter Number" required />
+    <input type="color" class="f-color f-fontSize13" placeholder="Enter Color" required />
+    <input type="range" id="a" value="50" class="f-range f-fontSize13">
+    	<div class="f-upload">
+            <input type="file" class="file" />
+            <div class="fakefile">
+                <input />
+                <img src="style/images/select.png" />
+            </div>
+        </div>
+</div>
+<pre>Dropdown is another important element of html page and mostly we have to customize it our own way, so it will very helpful if we use json for data options, or without json as your requirement</pre>
+<div class="bar">
+ <select class="dropdown">
+        <option value="0" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/facebook-icon-32.png"
+            data-description="Description with Facebook">Facebook</option>
+        <option value="1" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/twitter-icon-32.png"
+            data-description="Description with Twitter">Twitter</option>
+        <option value="2" selected="selected" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/linkedin-icon-32.png"
+            data-description="Description with LinkedIn">LinkedIn</option>
+        <option value="3" data-imagesrc="http://dl.dropbox.com/u/40036711/Images/foursquare-icon-32.png"
+            data-description="Description with Foursquare">Foursquare</option>
+    </select>
+</div>
+</section>
+
+<section class="pageF">
+<h3>Tables</h3>
+<pre>Table we can use through the class name, if need border use class="border",  if need altcolor use class="alterbg",  if need font-size use class="f-fontSize13" or can use custom class.</pre>
+<div class="bar">
+<table class="tbFull center f-fontSize13 border alterbg seprateHd">
+<tr>
+<th>Head1</th><th>Head2</th><th>Head3</th><th>Head4</th><th>Head5</th><th>Head6</th>
+</tr><tr>
+<td>Value1</td><td>Value2</td><td>Value3</td><td>Value4</td><td>Value5</td><td>Value6</td>
+</tr><tr>
+<td>Row2 Value1</td><td>Row2 Value2</td><td>Row2 Value3</td><td>Row2 Value4</td><td>Row2 Value5</td><td>Row2 Value6</td>
+</tr>
+</table>
+</div>
+</section>
+</div>
+<footer>&copy; Copyright reserved.</footer>
+</body>
+</html>

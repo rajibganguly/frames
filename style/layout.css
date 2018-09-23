@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* Layout css performs two ways, 
+1. If you too much picky about the design, then goto option1.
+2. else go to option2. */
+
+/* OPTION 1 */
+section>pre, section>div {display:none;}
+/*Buttons introduced */
+.f-btn {
+	background: #E6E6E6;
+    border: 1px solid #D3D3D3;
+    color: #555555;
+    font-weight: normal;
+	text-decoration:none;
+	padding:0.3em 1%;
+	text-align:center;
+	white-space: nowrap;
+    word-wrap: normal;
+	display: inline-block;
+    margin: 0;
+	cursor:pointer;
+}
+.bottombar {
+	padding:0.5em;
+}
+
+/* OPTION 2 */
+
+/*Buttons introduced info */
+.f-btn.f-info {
+	background: #428bca;
+    border: 1px solid #2b6ca4;
+    color: #FFF;
+}
+.f-btn.f-success {
+	background: #5cb85c;
+    border: 1px solid #419941;
+    color: #FFF;
+}
+.f-btn.f-fav {
+	background: #5bc0de;
+    border: 1px solid #449eb9;
+    color: #FFF;
+}
+.f-btn.f-warning {
+	background: #f4a12c;
+    border: 1px solid #d2871d;
+    color: #FFF;
+}
+.f-btn.f-danger {
+	background: #e23934;
+    border: 1px solid #c52824;
+    color: #FFF;
+}
+.f-btn.f-disabled {
+	background: #f6f6f6;
+    border: 1px solid #e1e1e3;
+    color: #dbdbdd;
+	cursor:not-allowed;
+	pointer-events:none;
+}
+
+/*Buttons introduced custom */
+.f-btn.f-custombtn1 {
+	background: #e5f3f9 url(images/r.png) 2px 3px no-repeat;
+    border: 1px solid #1a80ab;
+    color: #1a80ab;
+	padding-left:18px;
+}
+.f-btn.f-custombtn1:hover {
+	background: #c5e5f3 url(images/r.png) 2px 3px no-repeat;
+    border: 1px solid #1a80ab;
+    color: #1a80ab;
+	padding-left:18px;
+}
+
+/* Form Element */
+.f-txt, .f-password, .f-url, .f-email, .f-number {
+	padding: 0.5em 1%;
+}
+.f-color, .f-range  {
+	padding: 0px;
+	margin: 0;
+	vertical-align: middle;
+	height: 28px;
+}
+
+
+div.f-upload {
+	position: relative;
+}
+
+div.fakefile {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+input.file {
+	position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+}
+
+/* Table style */
+.tbFull {width:100%;}
+.tbHalf {width:50%;}
+table.center tr td, table.center tr th {text-align:center;}
+table.left tr td, table.left tr th {text-align:left;}
+table.right tr td, table.right tr th {text-align:right;}
+table tr td, table tr th {padding:0.5em; margin:0;}
+
+table {border-spacing:0;}
+table.border tr {border-color:#ccc; border-width:0 0 0 1px; border-style:solid; border-collapse:collapse;}
+table.border tr td {border-color:#ccc; border-width:1px 1px 0 0; border-style:solid;border-collapse:collapse;}
+table.border tr td:first-child, table.border tr th:first-child {border-left:1px solid #ccc; border-collapse:collapse;}
+table.border tr:last-child td {border-bottom:1px solid #ccc; border-collapse:collapse;}
+table.border tr th {border-color:#ccc; border-width:1px 1px 0 0; border-style:solid;border-collapse:collapse;}
+table.seprateHd tr th {background:#ccc;}
+table.alterbg tr:nth-child(odd) {background:#f2f2f2;}
